@@ -142,16 +142,8 @@ if (["how are you", "how r u", "how are u", "how's it going", "kese ho", "kese h
    };
 
    if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "Owner")) {
-     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞꧁𝐙𝐚𝐢𝐧𝐢-𝐉𝐮𝐭𝐭꧂☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℤ𝔸𝕀ℕ ℙℝ𝕀ℕℂ𝔼🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞https://www.facebook.com/profile.php?id=100086033644262&mibextid=ZbWKwL \n👋For Any Kind Of Help Contact On Telegram  Username 👉 @zainijutt7😇", threadID);
-   };
+     return api.sendMessage("ᱪ❤️ᱪ 𝐎𝐖𝐍𝐄𝐑:- ☞⫷𝐀𝐊𝐀𝐒𝐇 𝐉𝐔𝐓𝐓⫸☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 MŔ ΛҠ 🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝☆》:- ]|I{•------» https://www.facebook.com/profile.php?id=100004016155600", threadID);
 
-   if ((event.body.toLowerCase() == "tumhe banaya kon hai") || (event.body.toLowerCase() == "tumko banaya kisne")) {
-     return api.sendMessage("Zaini jutt  ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
-   };
-
-  if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon ha")) {
-     return api.sendMessage("He is zain. He Gives his name zain everywhare", threadID);
-   };
 
    if ((event.body.toLowerCase() == "shadi karoge") || (event.body.toLowerCase() == "mujhse shadi karoge?")) {
      return api.sendMessage("hanji, karunga lekin baccha. apke pet m hoga. manjur h?", threadID);
@@ -251,7 +243,7 @@ if (["how are you", "how r u", "how are u", "how's it going", "kese ho", "kese h
    };
   
   if ((event.body.toLowerCase() == "😒") || (event.body.toLowerCase() == "🙄")) {
-     return api.sendMessage("️️𝗔𝗦𝗬 𝗡𝗔 𝗠𝗨𝗝𝗛𝗔 𝗧𝗨𝗠 𝗗𝗘𝗞𝗛𝗢  𝗠𝗔𝗥𝗜 𝗛𝗔𝗡𝗦𝗜 𝗡𝗜𝗞𝗟 𝗝𝗔𝗧𝗜🤣🙈", threadID);
+     return api.sendMessage("️️𝐊𝐈𝐀 𝐇𝐎𝐖𝐀 𝐌𝐀𝐍𝐄 𝐓𝐎 𝐀𝐘𝐒𝐀 𝐊𝐔𝐂𝐇 𝐍𝐇𝐈 𝐊𝐇𝐀 𝐒𝐔𝐂𝐇𝐈 🤕🥺", threadID);
    };
 
    if ((event.body.toLowerCase() == "nobody loves me") || (event.body.toLowerCase() == "nobody love me") || (event.body.toLowerCase() == "koi pyar nhi karta")) {
@@ -843,21 +835,13 @@ if ((event.body.toLowerCase() == "🥑")) {
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
 
 var msg = {
-  body: `╭─═⊰❖⊱═─╮
-│ 🤖 ʙᴏᴛ: 𝑅𝐷𝑋 𝐵𝒪𝒯
-╰─═⊰❖⊱═─╯
+  body: `
+🍒 ${name} 🍒
 
-╔═══════🌸═══════╗
-║ ⫷★『${name}』★⫸     
-╠═══════🪷═══════╣
-                            
-  "${rand}"     
-                            
-╠═══════🌺═══════╣
-║ ✦ ░▒ 𝓞𝓦𝓝𝓔𝓡 ▒░ ✦     
-╠═══════🏵️═══════╣
-║ ⊰❀ 𝕊𝕒𝕣𝕕𝕒𝕣 𝕽𝕯𝕏 ❀⊱    
-╚═══════🍄═══════╝`
+【 ${rand} 】
+
+♡ 𝑶𝒘𝒏𝒆𝒓 ♡
+꧁ 𝐀𝐊 𝐀𝐊𝐀𝐒𝐇 ꧂`
 }
   return api.sendMessage(msg, threadID, messageID);
   };
