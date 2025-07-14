@@ -25,10 +25,7 @@ module.exports.run = async function({ api, event, args }) {
 	const juswa = moment.tz("Asia/Karachi").format("『D/MM/YYYY』 【HH:mm:ss】");
 
 	const link = [
-		"https://i.imgur.com/pcjD97x.jpeg",
-		"",
-		"",
-		""
+		"https://i.imgur.com/pcjD97x.jpeg"
 	];
 
 	const callback = () => api.sendMessage({
