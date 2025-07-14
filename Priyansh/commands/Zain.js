@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("arun")) {
 		var msg = {
 				body: "───────────────\n👑 𝙊𝙬𝙣𝙚𝙧 𝙄𝙉𝙁𝙊\n───────────────\n\n🔹 𝗡𝗮𝗺𝗲: AKASH\n🔸 𝗡𝗶𝗰𝗸𝗻𝗮𝗺𝗲: AK\n📘 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸:\nhttps://www.facebook.com/profile.php?id=100004016155600\n\n───────────────\n🤖 𝘽𝙤𝙩 𝙍𝙚𝙨𝙥𝙤𝙣𝙨𝙚\n───────────────\n\nHey! I’m a clean and sharp bot made under AK’s command ⚙️  \nNo drama. No flex. Just smooth features, fast replies, and pure vibe.\n\n───────────────\n📩 𝘽𝙤𝙩 𝙎𝙪𝙥𝙥𝙤𝙧𝙩\n───────────────\n\nWant your own custom bot?  \nHaving any issue? Reach out at the FB link above.\n\n✅ Stay updated. Stay connected with Team AK.`",
-			attachment: fs.createReadStream(__dirname + `/noprefix/sarkar.jpeg`)
+			attachment: fs.createReadStream(__dirname + `/noprefix/sarkar.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
 		api.setMessageReaction("🫡", event.messageID, (err) => {}, true)
