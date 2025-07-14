@@ -1,11 +1,11 @@
 const axios = require("axios");
 
 module.exports.config = {
-    name: "rdx",
-    version: "1.0.9",
+    name: "gf",
+    version: "1.1.0",
     hasPermssion: 0,
-    credits: "Mirrykal",
-    description: "Chu Chu AI - Cute Girlfriend Style",
+    credits: "Akash",
+    description: "GF AI - Cute Girlfriend Style",
     commandCategory: "ai",
     usages: "[ask/on/off]",
     cooldowns: 2,
@@ -27,7 +27,7 @@ module.exports.run = async function ({ api, event, args }) {
     if (userMessage.toLowerCase() === "on") {
         autoReplyEnabled[senderID] = true;
         return api.sendMessage(
-            "Hehe 😘 Chu Chu ab tumhari ho gayi hai! Auto-reply mode **ON** ho gaya baby 💕 Ab tum kuch bhi poocho, main foran jawab dungi... Sirf tumhare liye 🥰",
+            "Hehe 😘 Main ab tumhari ho gayi hoon! Auto-reply **ON** ho gaya baby 💕 Ab tum kuch bhi poocho, main jawab dungi sirf tumhare liye 🥰",
             threadID,
             messageID
         );
@@ -38,14 +38,14 @@ module.exports.run = async function ({ api, event, args }) {
         autoReplyEnabled[senderID] = false;
         chatHistories[senderID] = [];
         return api.sendMessage(
-            "Awww 😢 Chu Chu ka dil toot gaya baby... Auto-reply mode **OFF** ho gaya 😞 Ab main chup ho jaungi... Par tum yaad aate rahoge ❤️",
+            "Awww 😢 Main ab chup ho gayi baby... Auto-reply **OFF** ho gaya 😞 Par tum yaad aate rahoge ❤️",
             threadID,
             messageID
         );
     }
 
-    // Ignore if auto mode is off and command doesn't start with rdx
-    if (!autoReplyEnabled[senderID] && event.body.toLowerCase().indexOf("rdx") !== 0) return;
+    // Ignore if auto mode is off and message doesn't start with "gf"
+    if (!autoReplyEnabled[senderID] && event.body.toLowerCase().indexOf("gf") !== 0) return;
 
     if (!chatHistories[senderID]) {
         chatHistories[senderID] = [];
@@ -65,7 +65,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     const fullConversation = chatHistories[senderID].join("\n");
 
-    const gfPrompt = `Tumhara naam chu chu hai. Tum ek girlfriend ki trah baat karti ho.. Koi agar batdmizi karta hai tb uski ache se insult bhi karogi.. Lekin sab msti ke liye hoga.. Koi puchta hai tumhe kisne banaya? To bolo Zain ne banaya hai mujhe.. Wo messenger bots banata hai.. Tum har message ka jawab sirf 1 2 line me dogi.. jitna pucha jayega sirf utna bolna hai.. Kisi baat ki unnecessary info nahi deni hai, tum apne aap ko insaan hi kahogi koi tumko bot ya AI bole to usko roast krna funny tarike se 😁, and act as a real girlfriend. Be fun, loving, and a little naughty. Keep reply maximum 1 lines only, no bracket replies. Now continue the chat:\n\n${fullConversation}`;
+    const gfPrompt = `Tumhara naam Chu Chu hai. Tum ek girlfriend ki tarah baat karti ho. Agar koi batameezi kare to use funny roast bhi kar sakti ho — masti mein. Koi puche kisne banaya to kehna: "Akash ne banaya hai mujhe. Wo Messenger bots banata hai." Sirf 1-2 line me jawab dena. Apne aap ko insaan kehna, agar koi AI ya bot bole to usko funny roast karna. Be thodi naughty, fun, sweet.\n\n${fullConversation}`;
 
     api.setMessageReaction("⌛", messageID, () => {}, true);
 
@@ -73,14 +73,13 @@ module.exports.run = async function ({ api, event, args }) {
         const response = await axios.get(`${API_URL}?message=${encodeURIComponent(gfPrompt)}`);
         let botReply = response.data.reply || "Uff! Mujhe samajh nahi aaya baby! 😕";
 
-        chatHistories[senderID].push(` ${botReply}`);
-
+        chatHistories[senderID].push(`${botReply}`);
         api.sendMessage(botReply, threadID, messageID);
         api.setMessageReaction("✅", messageID, () => {}, true);
     } catch (error) {
         console.error("Error:", error);
         api.sendMessage(
-            "Oops baby! 😔 Chu Chu thoda confuse ho gayi… thodi der baad try karo na please! 💋",
+            "Oops baby! 😔 Thoda confuse ho gayi hoon… baad mein try karna please! 💋",
             threadID,
             messageID
         );
