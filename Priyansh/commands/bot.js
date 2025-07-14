@@ -857,11 +857,10 @@ if ((event.body.toLowerCase() == "🥑")) {
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = { 
-  body: `   🍒 ${name} 🍒 \n╭━━━━━━༺💥༻━━━━━━╮\n\n『\n   ${rand} 』\n\n╰━━━━━⫷👑⫸━━━━━╯\n    🔰 𝐎𝐖𝐍𝐄𝐑: 𝘼𝙆𝘼𝙎𝙃 [ＡＫ] 🔰`
+  body: `✨🌿❣︎${name}❣︎🌿✨\n━━━━━━━━━✦🌸✦━━━━━━━━━\n\n『\n   ${rand} 』\n\n╔═════⫷💠⫸═════╗\n   ✪ 𝙊𝙒𝙉𝙀𝙍: 𝘼𝙆𝘼𝙎𝙃 『ＡＫ』 ✪\n╚═════⫷💠⫸═════╝`
 };
 
 return api.sendMessage(msg, threadID, messageID);
-
-}
+};
 
 module.exports.run = function({ api, event, client, __GLOBAL }) { }
