@@ -33,7 +33,7 @@ module.exports.run = async ({ api, event, args, Users, Threads, Currencies }) =>
   api.sendMessage("𝗔𝗖𝗛𝗔 𝗚 𝗟𝗚𝗧𝗔 𝗕𝗛𝗢𝗢𝗞 𝗟𝗚 𝗚𝗔𝗘𝗬 𝗛𝗬 𝗝𝗡𝗔𝗕 𝗞𝗢 𝗗𝗘𝗧𝗔 𝗛𝗨 𝗦𝗛𝗔𝗪𝗔𝗥𝗠𝗔", event.threadID, () => {
     // Once the initial message is sent, proceed to send the image
     var callback = () => api.sendMessage(
-      { body: `MADE BY ZAIN PRINCE: ${link.length}`, attachment: fs.createReadStream(__dirname + "/cache/1.jpg") },
+      { body: `ᱪ❤️ᱪ 𝐀𝐊 ᱪ❤️ᱪ : ${link.length}`, attachment: fs.createReadStream(__dirname + "/cache/1.jpg") },
       event.threadID,
       () => fs.unlinkSync(__dirname + "/cache/1.jpg"),
       event.messageID
