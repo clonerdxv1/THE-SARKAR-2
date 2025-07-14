@@ -834,16 +834,10 @@ if ((event.body.toLowerCase() == "🥑")) {
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
 
-var msg = {
-  body: `
-🍒 ${name} 🍒
-
-【 ${rand} 】
-
-♡ 𝑶𝒘𝒏𝒆𝒓 ♡
-꧁ 𝐀𝐊 𝐀𝐊𝐀𝐒𝐇 ꧂`
-}
-  return api.sendMessage(msg, threadID, messageID);
+   var msg = { 
+      body: `🍒${name}🍒,    ✶⊶⊷⊶⊷❍❍⊶⊷⊶⊷✶\n\n『\n   ${rand} 』\n\n  |I{•------»«------•}I|        ❍Ꮗɳɘr᩶   𝐀𝐊 𝐀𝐊𝐀𝐒𝐇   |I{•------»«------•}I|`
+    }
+     return api.sendMessage(msg, threadID, messageID);
   };
 
 }
