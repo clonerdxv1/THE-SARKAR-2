@@ -55,7 +55,7 @@ https://www.facebook.com/profile.php?id=100004016155600
 💖 Thanks for using this bot by AKASH!
 ━━━━━━━━━━━━━━━━━━
 `
-`, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
+`, attachment: fs.createReadStream(__dirname + "/cache/botjoinig.mp4")} ,threadID));
         }
         else {
                 try {
