@@ -64,10 +64,10 @@ module.exports. run = function({ api, event, args, getText }) {
     i = startSlice;
     const returnArray = arrayInfo.slice(startSlice, startSlice + numberOfOnePage);
     
-   for (let item of returnArray) msg += `♛ ${++i} ║ ${prefix}${item}  ⚜️\n`;
+  for (let item of returnArray) msg += `ᱪ❤️ᱪ${++i} ᱪ ${prefix}${item}   🍒\n`;
         
-        const siu = `Command list 📜\n  Cᴏᴍᴍᴀɴᴅ Lɪsᴛ 📘 💫 Created by 𝗭𝗔̃𝗜̨𝗡̃𝗜̨ 𝗝𝗨𝗧𝗧 💫 For info: /help (command name) 🌟`;
-    
+        const siu = `Command list 📜\n  Cᴏᴍᴍᴀɴᴅ Lɪsᴛ 📜💹Created by 𝐌𝐑 ►𝐀𝐊 For info: /help (command name) 🌟`;
+      
  const text = `\nPage (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})`;
  
     return api.sendMessage(siu + "\n\n" + msg  + text, threadID, async (error, info) => {
