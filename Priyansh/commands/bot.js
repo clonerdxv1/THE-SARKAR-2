@@ -95,20 +95,14 @@ if ([
   if ([
     "i love you bot", 
     "bot i love you", 
-    "i love you",
-    "love u",
-    "bot love u"
+    "i love you"
 ].includes(event.body.toLowerCase())) {
     return api.sendMessage("Yaar, Mujhe aisi baatein nahi pasand. Main buhat shreef hoon. Haan, mera owner single hai, bolo to number tak de sakta hoon. 😁", threadID);
   }
  if ([
     "bot i miss you", 
     "i miss you bot", 
-    "miss you",
-    "miss u"
-    miss u bot',
-    "bot miss u"
-    
+    "miss you"
 ].includes(event.body.toLowerCase())) {
     return api.sendMessage("Hyeee, I miss you too! SuChi kia karun, ID issue aa jata hai is liye mujhe new ID banne ka wait karna padta hai. Jab new ID banti hai, to owner mujhe add kar deta hai. 😅", threadID);
 }
@@ -214,33 +208,12 @@ if ([
    };
 
    if ((event.body.toLowerCase() == "😡") || (event.body.toLowerCase() == "😤") || (event.body.toLowerCase() == "😠") || (event.body.toLowerCase() == "🤬") || (event.body.toLowerCase() == "😾")) {
-     return api.sendMessage("️Ary gussa kio yarrr chl chor gussa yarr sulah kr latty 🥺🥺" threadID);
+     return api.sendMessage("️🥺 M toh Sirf Mazak Kr Rha Tha🥺. Gussa Mat Karo. Ek Chummi Lo aur Shant Raho 😘", threadID);
    };
 
-if ((event.body.toLowerCase() == "😞") || (event.body.toLowerCase() == "😔") || (event.body.toLowerCase() == "😣") || (event.body.toLowerCase() == "☹️") || (event.body.toLowerCase() == "😟") || (event.body.toLowerCase() == "😩") || (event.body.toLowerCase() == "😖") || (event.body.toLowerCase() == "😫") || (event.body.toLowerCase() == "😦") || (event.body.toLowerCase() == "😧") || (event.body.toLowerCase() == "😥") || (event.body.toLowerCase() == "😓") || (event.body.toLowerCase() == "😰")) {
-  return api.sendMessage([
-    "Kya hua, sad kyu ho? Mujhe batao.",
-    "Udaasi chhod do, main hoon na!",
-    "Aaj ka din thoda mushkil lag raha hai?",
-    "Aree yaar, sab theek ho jaayega.",
-    "Bolo kya hua, dil halka hoga.",
-    "Ek smile de do, aur batao kya baat hai.",
-    "Main hoon yahan, feel free to talk.",
-    "Kabhi kabhi rona bhi zaroori hota hai, lekin akela mat mehsoos karo.",
-    "Sunne wala hoon, bol do sab.",
-    "Tere jaise dost udaas hon, toh accha nahi lagta.",
-    "Chal ek joke sunata hoon, mood theek hoga.",
-    "Tension lene ka nahi, sirf baat karne ka time hai.",
-    "Jo dil pe hai bol do, main samajhne ki koshish karunga.",
-    "Ye waqt bhi guzar jaayega, bas thoda sa patience.",
-    "Tum strong ho, bas thoda support chahiye.",
-    "Akele mat mehsoos karo, main hoon yahan.",
-    "Chalo kuch positive baatein karte hain?",
-    "Dil ki baat share karne se halka lagta hai.",
-    "Zindagi thodi si muskurahat maangti hai — smile karo!",
-    "Kahi ghum na ho jao itni udaasi mein, main hoon na dhoondhne!"
-  ][Math.floor(Math.random() * 20)], threadID);
-};
+   if ((event.body.toLowerCase() == "😞") || (event.body.toLowerCase() == "😔") || (event.body.toLowerCase() == "😣") || (event.body.toLowerCase() == "☹️") || (event.body.toLowerCase() == "😟") || (event.body.toLowerCase() == "😩") || (event.body.toLowerCase() == "😖") || (event.body.toLowerCase() == "😫") || (event.body.toLowerCase() == "😦") || (event.body.toLowerCase() == "😧") || (event.body.toLowerCase() == "😥") || (event.body.toLowerCase() == "😓") || (event.body.toLowerCase() == "😰")) {
+     return api.sendMessage("️Kya huva, Sad kyu ho, Mujhe batao", threadID);
+   };
 
 
    if ((event.body.toLowerCase() == "hm") || (event.body.toLowerCase() == "hmm")) {
@@ -894,12 +867,12 @@ if ((event.body.toLowerCase() == "🥑")) {
    mess = "{name}"
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
-  var msg = { 
-    body: `✨🌿❣︎${name}❣︎🌿✨,    ━━━━━━✦🌸✦━━━━━━ \n\n『\n   ${rand} 』\n\n  ╔═════⫷💠⫸═════╗           ★꧁𝐎𝐖𝐍𝐄𝐑꧂★ 𝘼𝙆𝘼𝙎𝙃 『ＡＫ』 ╚═════⫷💠⫸═════╝`
-  }
+    var msg = { 
+      body: `🍒❣︎${name}❣︎🍒,    ━━━━━━✦💖✦━━━━━━ \n\n『\n   ${rand} 』\n\n  ╔═════❀❦︎❀═════╗           ☆》𝐎𝐖𝐍𝐄𝐑《☆  \n \n  𝐀𝐊 𝐀𝐊𝐀𝐒𝐇  ╚═════❀❦︎❀═════╝`
+    }
 
-  return api.sendMessage(msg, threadID, messageID);
-};
+    return api.sendMessage(msg, threadID, messageID);
+  };
 
 }
 
