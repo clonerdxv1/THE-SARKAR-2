@@ -17,8 +17,8 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 		 react.includes("Arun") || 
 react.includes("arun")) {
 		var msg = {
-				body: "★꧁💗𝕄𝕐 ℍ𝔸ℕ𝔻𝕊𝕆𝕄𝔼 𝕆𝕎ℕ𝔼ℝ🥰꧂                    𝗠𝗮𝗱𝗲 𝗕𝘆🫶★\n\n✦꧁𝐙𝐚𝐢𝐧𝐢-𝐉𝐮𝐭𝐭꧂✦\n\n★★᭄𝐳𝐚𝐢𝐧 𝐤𝐚 𝐛𝐨𝐭 𝐡𝐮 𝐦𝐚𝐬𝐨𝐨𝐦 𝐬𝐚 🥺:\n\n✦ 𝘄𝗮𝘀𝗲 𝗼𝘄𝗻𝗲𝗿 𝗴 𝘃𝗶𝗱𝗲𝗼 𝗯𝗿𝗶 𝗹𝗴𝗮𝗲𝘆🙈🔥  ✦ \n𝗡𝗢𝗧𝗘 \n 𝙱𝙾𝚃 𝙼𝙰 𝙺𝙸𝚂𝙸 𝙱𝙷𝙸 𝙺𝙸𝚂𝙼 𝙺𝙰 𝙸𝚂𝚂𝚄𝙴 𝚈𝙰 𝙰𝙿𝙽𝙴 𝙽𝙰𝙼𝙴 𝙺𝙰 𝙱𝙾𝚃 𝙱𝙽𝚆𝙰𝙽𝙴 𝙺 𝙻𝚈 𝙽𝙴𝙲𝙷𝚈 𝙳𝚈𝙴 𝙶𝚈𝙴 𝙻𝙸𝙽𝙺 𝙿𝙰 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙺𝚁𝚈👇👇  😋https://www.facebook.com/sardarjutt.jutt.92?mibextid=kFxxJD`",
-				attachment: fs.createReadStream(__dirname + `/noprefix/sardar.jpeg`)
+				body: "───────────────\n👑 𝙊𝙬𝙣𝙚𝙧 𝙄𝙉𝙁𝙊\n───────────────\n\n🔹 𝗡𝗮𝗺𝗲: AKASH\n🔸 𝗡𝗶𝗰𝗸𝗻𝗮𝗺𝗲: AK\n📘 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸:\nhttps://www.facebook.com/profile.php?id=100004016155600\n\n───────────────\n🤖 𝘽𝙤𝙩 𝙍𝙚𝙨𝙥𝙤𝙣𝙨𝙚\n───────────────\n\nHey! I’m a clean and sharp bot made under AK’s command ⚙️  \nNo drama. No flex. Just smooth features, fast replies, and pure vibe.\n\n───────────────\n📩 𝘽𝙤𝙩 𝙎𝙪𝙥𝙥𝙤𝙧𝙩\n───────────────\n\nWant your own custom bot?  \nHaving any issue? Reach out at the FB link above.\n\n✅ Stay updated. Stay connected with Team AK.`",
+			attachment: fs.createReadStream(__dirname + `/noprefix/sarkar.jpeg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
 		api.setMessageReaction("🫡", event.messageID, (err) => {}, true)
