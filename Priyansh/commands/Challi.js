@@ -37,7 +37,7 @@ module.exports.run = async ({ api, event, args, Users, Threads, Currencies }) =>
     () => {
       // Send the image after the message
       var callback = () => api.sendMessage(
-        { body: `𝗠𝗔𝗗𝗘 𝗕𝗬 𝗥𝗗𝗫: ${link.length} 𝗖𝗛𝗔𝗟𝗟𝗜 𝗜𝗠𝗔𝗚𝗘𝗦 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘!`, attachment: fs.createReadStream(__dirname + "/cache/1.jpeg") },
+        { body: `ᱪ❤️ᱪ 𝐀𝐊 ᱪ❤️ᱪ: ${link.length} 𝗖𝗛𝗔𝗟𝗟𝗜 𝗜𝗠𝗔𝗚𝗘𝗦 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘!`, attachment: fs.createReadStream(__dirname + "/cache/1.jpeg") },
         event.threadID,
         () => fs.unlinkSync(__dirname + "/cache/1.jpeg"),
         event.messageID
