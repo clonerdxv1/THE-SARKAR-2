@@ -60,12 +60,12 @@ module.exports.run = async ({ api, event, args, Users, Threads, Currencies }) =>
 
   // Stylish message before sending the DP
   api.sendMessage(
-    "𝘼𝙮𝙚 𝙝𝙮𝙚𝙚 😍 𝙇𝙜𝙩𝙖 𝘽𝙖𝙗𝙪 𝙎𝙝𝙤𝙣𝙖 𝙝𝙮 𝙟𝙣𝙖𝙗 𝙠𝙚 𝙥𝙖𝙨! ✨\n\n𝙇𝙖 𝙡𝙮 𝙡𝙖 𝙡𝙮, 𝙩𝙪 𝙘𝙤𝙪𝙥𝙡𝙚 𝘿𝙋 𝙡𝙖 𝙡𝙮! 👫\n\n🤩 𝘽𝙪𝙝𝙩 𝙝𝙮 𝙣𝙚𝙬 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 𝙙𝙖 𝙠𝙚 𝙙𝙚𝙠𝙝 𝙡𝙮! 🖼️",
+    "ᱪ❤️ᱪ 𝘾𝙊𝙋𝙐𝙇𝙀 𝘿𝙋 𝘾𝙃𝘼𝙃𝙄𝙀 𝙊𝙆𝙄𝙀 𝘽𝙊𝙎𝙎 🖼️",
     event.threadID,
     () => {
       // Send the DP after the message
       var callback = () => api.sendMessage(
-        { body: `𝗠𝗔𝗗𝗘 𝗕𝗬 𝗥𝗗𝗫: ${link.length} 𝗗𝗣𝘀 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘!`, attachment: fs.createReadStream(__dirname + "/cache/1.jpeg") },
+        { body: `ᱪ❤️ᱪ 𝐀𝐊 ᱪ❤️ᱪ: ${link.length} 𝗗𝗣𝘀 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘!`, attachment: fs.createReadStream(__dirname + "/cache/1.jpeg") },
         event.threadID,
         () => fs.unlinkSync(__dirname + "/cache/1.jpeg"),
         event.messageID
