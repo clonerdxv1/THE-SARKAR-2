@@ -31,31 +31,26 @@ module.exports.run = async function({ api, event }) {
         if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
                 api.changeNickname(`{ ${global.config.PREFIX} } × ${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
                 const fs = require("fs");
-            return api.sendMessage("Hello Everyone 🙋‍♂️ Bot is Now Connected 🔗", event.threadID, () => 
-  api.sendMessage({
-    body: `
-╚»★  𝙱𝙾𝚃 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳  ★«╝
+                return api.sendMessage("Hello 🙋‍♀️𝐁𝐨𝐭 𝐢𝐬 𝐍𝐨𝐰 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 🤝", event.threadID, () => api.sendMessage({body:`
+                  ╚»★    ΛҠA͜͡SĤ ΛҠ ßᎾSS ★«╝
+               
+               ☆》 ׂCONNECTED《☆
 
-✨ Connected Successfully to Group!
-🔹 Bot Status: Online & Ready
-🔹 Prefix: [ ${global.config.PREFIX} ]
-🔹 Owner: 𝐀𝐊𝐀𝐒𝐇 (AK)
+💠✨ 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑: 『👑 𝐀𝐊𝐀𝐒𝐇 • 𝐀𝐊 👑』✨💠
 
-━━━━━━━━━━━━━━━━━━
-🔧 For Commands: Type "${global.config.PREFIX}help"
-📘 Owner's Facebook:
-https://www.facebook.com/profile.php?id=100004016155600
-━━━━━━━━━━━━━━━━━━
+${global.config.PREFIX}🔧💬 For any command issue or query,
+╰─➤ Contact directly or raise your concern!
 
-📌 𝗡𝗢𝗧𝗘:
-- This bot may stop anytime (backup recommended).
-- For new bot setup or issues, re-add owner to the group.
-- Problems? Use another ID and run the bot.
+⛓️⚙️ Bot maintained & developed by AKASH — with 💙 & 💻
 
-💖 Thanks for using this bot by AKASH!
-━━━━━━━━━━━━━━━━━━
-`
-`, attachment: fs.createReadStream(__dirname + "/cache/botjoinig.mp4")} ,threadID));
+═══════════ ★ ★ ★ ═══════════
+
+💖 THANKS FOR USING AKASH BOT 💖  
+💎━━━━━🌟━━━━━💎
+╔════════════╗
+    A⃠K⃠A⃠S⃠H⃠
+╚════════════╝
+`, attachment: fs.createReadStream(__dirname + "/cache/botjoining.mp4")} ,threadID));
         }
         else {
                 try {
@@ -76,8 +71,7 @@ https://www.facebook.com/profile.php?id=100004016155600
                         }
                         memLength.sort((a, b) => a - b);
 
-                     (typeof threadData.customJoin == "undefined") ? 
-msg = `Hey {name},\n\n𒁍 »─── 𓆩✨𓆪 ───« 𒁍\n\nYou're the {soThanhVien}ᵗʰ member\nof the {threadName} group 💌\n\n𒁍 »─── 𓆩🌸𓆪 ───« 𒁍\n\nWe’re so glad to have you!\nPlease enjoy your stay & make great memories ✨\n\n💖 ━━━━━━━ 💖\n\n🔐 My one & only owner:\n✦ 𝐀𝐊𝐀𝐒𝐇 (AK) ✦\nForever grateful to him 💫\n\n🤍 Welcome once again! 🕊️`  : msg = threadData.customJoin;
+                       (typeof threadData.customJoin == "undefined") ? msg = "Hello  {name},\n─────────────────\n You're The {soThanhVien}Member ─────────────────\nOf {threadName} Group\n─────────────────\nPlease Enjoy Your Stay\n─────────────────\nAnd Make Lots Of Friends =)\n──────-°°__𝗧𝗿𝘂𝘀𝘁 𝗺e 🔐 °__!!>☁️✨❤️ My Owner  ✦͙͙͙͙❥⃝∗⁎.ʚ AK AKASH  ɞ.⁎∗❥⃝**͙✦͙͙͙ ❤️ Love you 😘 ummmma ❤️😍" : msg = threadData.customJoin;
                         msg = msg
                         .replace(/\{name}/g, nameArray.join(', '))
                         .replace(/\{type}/g, (memLength.length > 1) ?  'You' : 'Friend')
@@ -99,3 +93,4 @@ msg = `Hey {name},\n\n𒁍 »─── 𓆩✨𓆪 ───« 𒁍\n\nYou're th
                 } catch (e) { return console.log(e) };
         }
                     }
+                    
