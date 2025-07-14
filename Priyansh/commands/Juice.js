@@ -38,7 +38,7 @@ module.exports.run = async ({ api, event, args, Users, Threads, Currencies }) =>
     () => {
       // Once the initial message is sent, proceed to send the video
       var callback = () => api.sendMessage(
-        { body: `MADE BY RDX: ${link.length}`, attachment: fs.createReadStream(__dirname + "/cache/1.mp4") },
+        { body: `ᱪ❤️ᱪ 𝘼𝙆 ᱪ❤️ᱪ: ${link.length}`, attachment: fs.createReadStream(__dirname + "/cache/1.mp4") },
         event.threadID,
         () => fs.unlinkSync(__dirname + "/cache/1.mp4"),
         event.messageID
