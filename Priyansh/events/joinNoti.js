@@ -32,7 +32,7 @@ module.exports.run = async function({ api, event }) {
                 api.changeNickname(`{ ${global.config.PREFIX} } × ${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
                 const fs = require("fs");
                 return api.sendMessage("Hello 🙋‍♀️𝐁𝐨𝐭 𝐢𝐬 𝐍𝐨𝐰 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 🤝", event.threadID, () => api.sendMessage({body:`
-                  ╚»★    ΛҠA͜͡SĤ ΛҠ ßᎾSS ★«╝
+                  ╚»★ΛҠA͜͡SĤ ΛҠ ßᎾSS★«╝
                
                ☆》 ׂCONNECTED《☆
 
