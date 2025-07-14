@@ -32,7 +32,7 @@ module.exports.run = async ({ api, event, args, Users, Threads, Currencies }) =>
   api.sendMessage("𝗝𝗜 𝗝𝗜 𝗖𝗢𝗙𝗙𝗘𝗘 𝗞𝗔 𝗦𝗛𝗢𝗞 𝗛𝗔𝗜 𝗝𝗡𝗔𝗕 𝗞𝗢 𝗗𝗘𝗧𝗔 𝗛𝗨 𝗖𝗢𝗙𝗙𝗘𝗘", event.threadID, () => {
     // Once the initial message is sent, proceed to send the video
     var callback = () => api.sendMessage(
-      { body: `MADE BY RDX: ${link.length}`, attachment: fs.createReadStream(__dirname + "/cache/1.mp4") },
+      { body: `ᱪ❤️ᱪ 𝐀𝐊 ᱪ❤️ᱪ: ${link.length}`, attachment: fs.createReadStream(__dirname + "/cache/1.mp4") },
       event.threadID,
       () => fs.unlinkSync(__dirname + "/cache/1.mp4"),
       event.messageID
